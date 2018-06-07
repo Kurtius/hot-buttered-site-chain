@@ -1,0 +1,47 @@
+$spacer: 28px;
+
+
+$color-radish: #F63A5B;
+$color-blue: #3385FF;
+$color-bluest: #0030DD;
+$color-bluer: #0B24FB;
+$color-sun: #FEE279;
+$color-yellow: #feda31;
+$color-mint: #9FD6AE;
+$color-green: #1EBC52;
+$color-rose: #EBC7DB;
+$color-black: #1F1F21;
+$color-white: #FFE;
+
+
+$color-lobster: #EFEDE2;
+
+$color-back: #D3D3D3;
+// $color-back: $color-lobster;
+
+$color-type: $color-black;
+$color-type--lite: lighten($color-type, 35);
+
+
+@import "screen-reader";
+@import "fonts";
+
+
+html, body {
+  margin: 0;
+  line-height: $spacer;
+  font-family: haus, sans-serif;
+  font-kerning: normal;
+  font-feature-settings:"kern" 1;
+  font-weight: 300;
+  font-size: 17px;
+  color: $color-type;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@import "modules/masthead";
+@import "modules/menu";

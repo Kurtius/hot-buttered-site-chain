@@ -1,0 +1,28 @@
+#masthead {
+  margin-bottom: $spacer*8;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  .logo {
+    a {
+      text-decoration: none;
+      font-family: display;
+      font-weight: 300;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      line-height: $spacer;
+      color: $color-type;
+    }
+    img {
+      position: absolute;
+      width: 120px;
+      top: 5px;
+      left: 10px;
+    }
+    strong {
+      padding-left: 48px;
+    }
+  }
+
+}

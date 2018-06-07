@@ -1,0 +1,28 @@
+#menu {
+  ul {
+    display: flex;
+  }
+  li {
+    padding: 0 $spacer*0.25;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  a {
+    color: $color-type;
+
+  }
+
+
+  .active {
+    font-weight: 500;
+    color: $color-type;
+  }
+  a:hover,
+  .active:hover {
+    color: $color-bluest;
+  }
+}

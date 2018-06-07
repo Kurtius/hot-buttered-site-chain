@@ -1,0 +1,11 @@
+<nav id="menu" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+  <ul>
+    {{#each category }}
+      <li>
+        <a href="/{{path}}" class="{{{isActive @root.path path}}}" itemprop="url">
+          <span itemprop="name">{{ name }}</span>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</nav>

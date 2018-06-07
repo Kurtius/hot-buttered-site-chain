@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {{> meta }}
+    <link href="/css/app.css?v={{version}}" crossorigin="anonymous" media="all" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//basehold.it/14/ff0000"> -->
+  </head>
+  <body class="projects">
+    {{> masthead }}
+
+<main>
+<article>
+
+  <header>
+    <h1>{{name}}</h1>
+    {{{contents}}}
+  </header>
+
+  <nav id="projects-list" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+    <ul>
+      {{#each project }}
+        <li class="{{color}}">
+          <a href="/{{path}}" class="{{{isActive @root.path path}}}" itemprop="url">
+            <img src="/assets/img/projects/{{ preview }}" alt="" itemprop="url">
+            <span itemprop="name">{{ year }}<br>{{ name }}</span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+  </article>
+</main>
+
+
+
+  </body>
+</html>
