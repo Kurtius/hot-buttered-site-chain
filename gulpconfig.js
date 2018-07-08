@@ -150,7 +150,7 @@ module.exports = {
     }
   },
   minifySVG: {                                    // https://www.npmjs.com/package/gulp-svgo
-    src: build + "/img/**",
-    dest: build + "/img",
+    src: build_assets + "/img/**/*.svg",
+    dest: build_assets + "/img",
   },
 };
