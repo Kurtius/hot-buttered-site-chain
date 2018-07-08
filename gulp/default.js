@@ -27,9 +27,9 @@ gulp.task('build', function(callback) {
     'minifyJS',
     'minifySVG',
     'minifyImages',
-    'criticalCSS',
-    'publish',
-    'slack',
+    // 'criticalCSS',
+    // 'publish',
+    // 'slack',
     callback);
 });
 

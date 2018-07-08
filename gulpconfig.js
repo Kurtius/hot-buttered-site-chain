@@ -153,4 +153,14 @@ module.exports = {
     src: build_assets + "/img/**/*.svg",
     dest: build_assets + "/img",
   },
+  minifyImages: {                                 // https://www.npmjs.com/package/gulp-imagemin
+    src:  build_assets + "/img/**/*.{jpg,jpeg,png,gif}",
+    dest: build_assets + "/img",
+    options: {
+      optimizationLevel: 9,
+      progessive: true,
+      interlaced: true,
+      multipass: true
+    }
+  },
 };
